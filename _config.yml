@@ -1,1 +1,12 @@
+# see https://github.com/daattali/beautiful-jekyll/blob/master/_config.yml
+
 theme: jekyll-theme-minimal
+
+title: Daniel Philippus
+
+# navbar-links:
+
+social-network-links:
+  linkedin: daniel-philippus
+  
+ 
