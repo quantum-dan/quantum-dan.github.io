@@ -2,7 +2,7 @@ I am a research-based master's student in Hydrology at Colorado School of Mines 
 
 # Research
 
-My thesis research focuses on analysis and prediction of river temperatures.  I am currently working on gathering high-resolution river temperature data using satellite remote sensing; once complete, this will facilitate furthe research on river temperature.
+My thesis research focuses on analysis and prediction of river temperatures.  I am currently working on preparing a suitable dataset.
 
 Since June 2019, I have worked on the [Los Angeles River Environmental Flows Project](https://www.sccwrp.org/about/research-areas/ecohydrology/los-angeles-river-flows-project/), primarily as a hydraulic modeler.  The project's original goal was to investigate the impacts of increased wastewater recycling on ecology and recreational uses in the Los Angeles River, which, in the summer, is mostly wastewater.  We are now working on restoration scenarios to mitigate the impact of wastewater recycling and other flow changes.  For the project, I assembled a HEC-RAS model from existing partial models and LIDAR data, calibrated the model, and used the model as well as a suite of utility scripts I developed to efficiently analyze a large range of hydrologic and hydraulic scenarios.  As a spinoff project, I developed a graphical automatic calibration utility for HEC-RAS, [Raspy-Cal](https://raspy-cal.dphilippus.com/).
 
