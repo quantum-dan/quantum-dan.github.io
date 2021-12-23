@@ -1,4 +1,4 @@
-I am a research-based master's student in Hydrology at Colorado School of Mines working with Dr. Terri Hogue.  My research is in river temperature and hydraulic modeling for river restoration.
+I am a research-based master's student in Hydrology at Colorado School of Mines working with Dr. Terri Hogue.  My research is in river temperature and hydraulic modeling for river restoration.  I am also an enrolled Engineer Intern in Colorado.
 
 # Research
 
@@ -40,5 +40,5 @@ I have professional experience with hydraulic modeling, software development (pa
 
 # Miscellaneous
 
-* Passed FE exam in Civil Engineering
+* Engineer Intern in Colorado
 * Associate Member, ASCE
