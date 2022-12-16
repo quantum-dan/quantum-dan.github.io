@@ -1,4 +1,4 @@
-I am a research-based master's student in Hydrology at Colorado School of Mines working with Dr. Terri Hogue.  My research is in river temperature modeling and hydraulic modeling for river restoration.  I am also an enrolled Engineer Intern in Colorado.
+I am an incoming PhD student, following a thesis-based MS, in Hydrology at Colorado School of Mines working with Dr. Terri Hogue.  My research is in river temperature modeling and hydraulic modeling for river restoration.  I am also an enrolled Engineer Intern in Colorado.
 
 # Research
 
@@ -19,10 +19,12 @@ Since June 2019, I have worked on the [Los Angeles River Environmental Flows Pro
 ## Selected Publications & Conferences
 
 * [Raspy-Cal: A Genetic Algorithm-Based Automatic Calibration Tool for HEC-RAS Hydraulic Models](https://www.mdpi.com/2073-4441/13/21/3061) (Philippus, Wolfand, Abdi, and Hogue, 2021; DOI:10.3390/w13213061) describes the implementation of the HEC-RAS automatic calibration utility I developed and a case study with it.  I also presented on this at the AGU Fall Meeting 2020 in an eLightning format.
+* I presented a poster on TempEst at the AGU Frontiers in Hydrology Meeting in 2022.
+* I gave an oral presentation on LOST and preliminary sensitivity results at the AWRA Annual Conference in 2022.
 
 # Background & Education
 
-My master's degree coursework focused on modeling, applied mathematics and field methods.  My undergraduate education, also at Colorado School of Mines, was in Civil Engineering, with specialized coursework on water resources, geotechnical engineering, and surveying.  In addition to my research with the Hogue Group, which I began after my sophomore year, I interned at Kilduff Underground Engineering, primarily as a geotechnical monitoring survey technician, though I also ran pipe jacking load calculations for trenchless tunneling projects.
+My master's degree coursework focused on modeling, applied mathematics and field methods; I intend to use my remaining PhD coursework to develop a background in water policy and economics.  My undergraduate education, also at Colorado School of Mines, was in Civil Engineering, with specialized coursework on water resources, geotechnical engineering, and surveying.  In addition to my research with the Hogue Group, which I began after my sophomore year, I interned at Kilduff Underground Engineering, primarily as a geotechnical monitoring survey technician, though I also ran pipe jacking load calculations for trenchless tunneling projects.
 
 ## Specialized Coursework
 
