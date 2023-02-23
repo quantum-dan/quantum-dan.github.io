@@ -1,14 +1,14 @@
-I am an incoming PhD student, following a thesis-based MS, in Hydrology at Colorado School of Mines working with Dr. Terri Hogue.  My research is in river temperature modeling and hydraulic modeling for river restoration.  I am also an enrolled Engineer Intern in Colorado.
+I am a PhD student in Hydrology at Colorado School of Mines working with Dr. Terri Hogue.  My research is in river temperature modeling and hydraulic modeling for river restoration.  I am also an enrolled Engineer Intern in Colorado (civil engineering).
 
 # Research
 
 ## Stream Temperature: PhD - NOAA National Water Model
 
-For my PhD research beginning in the spring, I will be working on developing and applying a stream temperature module for NOAA's NWM.  We hope to implement this as a stand-alone model as well.
+For my PhD research beginning in the spring, I am working on developing and applying a stream temperature module for NOAA's NWM.  We hope to implement this as a stand-alone model as well.
 
 ## Stream Temperature: MS Thesis
 
-My thesis research focuses on analysis and prediction of river temperatures at high resolution.  As high-resolution data do not exist at the scale of the contiguous United States, the first part of my work was the development of [TempEst](https://github.com/river-tempest/tempest), a machine learning model for estimating monthly mean stream temperatures at a point using only remotely-sensed data.  TempEst is trained on the USGS gage network, but is able to estimate the temperature of ungaged locations (based on a validation dataset) with high accuracy (a median Root Mean Square Error of 1.7 C) and is well-suited to large-scale analyses.
+My thesis research focused on analysis and prediction of river temperatures at high resolution.  As most smaller reaches in the contiguous United States do not have temperature monitoring, despite many extensive gauge networks, the first part of my work was the development of [TempEst](https://github.com/river-tempest/tempest), a machine learning model for estimating monthly mean stream temperatures at a point using only remotely-sensed data.  TempEst is trained on the USGS gage network, but is able to estimate the temperature of ungaged locations (based on a validation dataset) with high accuracy (a median Root Mean Square Error of 1.7 C) and is well-suited to large-scale analyses.
 
 Building on TempEst, I developed another model, LOST, to model longitudinal stream temperature profiles based on land cover conditions, again using only remotely-sensed data.  LOST is particularly useful for sensitivity analyses, quickly running large numbers of scenarios, and rivers where field data are sparse.  Over testing reaches typically on the order of tens of kilometers in length, LOST introduces a median RMSE of about 1.2 C.
 
