@@ -1,4 +1,20 @@
-I am a PhD student in Hydrology at Colorado School of Mines working with Dr. Terri Hogue.  My research is in river temperature modeling and hydraulic modeling for river restoration.  I am also an enrolled Engineer Intern in Colorado (civil engineering).
+I develop and use river temperature and hydraulic models and modeling tools as a PhD student in Hydrology at Colorado School of Mines working with Dr. Terri Hogue.  My research is in river temperature modeling and hydraulic modeling for river restoration.  I am also an enrolled Engineer Intern in Colorado (civil engineering).
+
+# Models and Tools
+
+## Stream Temperature Models
+
+For my main graduate research, I am developing several stream temperature models.  The emphasis is on statistical modeling at the scale of the contiguous United States.
+
+- [TempEst](https://github.com/river-tempest/tempest) estimates current/historic stream temperatures without in-situ field data.  It uses a machine learning model, trained on the USGS gage network, with publicly-available satellite remote sensing data to estimate monthly mean stream temperatures across the contiguous United States.  Significant functionality improvements (e.g. accuracy, resolution) are in development.  Manuscript in preparation.  [Current citation](https://scholar.google.com/scholar?cluster=1692791899518260542&hl=en&oi=scholarr)
+
+## Hydraulic Modeling Tools
+
+To support more efficient research on river hydraulics and restorations, I have developed several HEC-RAS automation tools.  They are available as Python packages on the Python Package Index.  In general, these are not under active development, but I will address Issues opened on their GitHub repositories (linked from the PyPI pages) as I have time.
+
+- [Raspy](https://pypi.org/project/raspy-auto/) is a general HEC-RAS automation tool.  It supports setting flow data and roughness coefficients, running (steady-state) models, and retrieving cross-section hydraulic data.  Support was recently added for HEC-RAS 6.x and for retrieving overbank hydraulic data and shear stress.
+- [RaspyGeo](https://pypi.org/project/RaspyGeo/) automates geometry modification scenarios in HEC-RAS, including running the model and retrieving hydraulics data.  The general principle is similar to HEC-RAS' built-in Geometry Modification tool.  However, RaspyGeo supports efficiently creating, running, and retrieving data for many scenarios, instead of manually specifying each one.  It comes with a few pre-specified geometry modification functions (e.g. adding a trapezoidal low-flow channel), but the user can also write their own, which allows unlimited flexibility.
+- [Raspy-Cal](https://pypi.org/project/raspy-cal/) is a HEC-RAS roughness autocalibration tool built on Raspy using a genetic algorithm.
 
 # Research
 
@@ -14,7 +30,7 @@ Building on TempEst, I developed another model, LOST, to model longitudinal stre
 
 ## Los Angeles River Hydraulics
 
-Since June 2019, I have worked on the [Los Angeles River Environmental Flows Project](https://www.sccwrp.org/about/research-areas/ecohydrology/los-angeles-river-flows-project/), primarily as a hydraulic modeler.  The project's original goal was to investigate the impacts of increased wastewater recycling on ecology and recreational uses in the Los Angeles River, which, in the dry season, is mostly wastewater.  We are now working on restoration scenarios to mitigate the impact of wastewater recycling and other flow changes.  For the project, I assembled a HEC-RAS model from existing partial models and LIDAR data, calibrated the model, and used the model as well as a suite of utility scripts I developed to efficiently analyze a large range of hydrologic and hydraulic scenarios.  As a spinoff project, I developed an automatic calibration utility for HEC-RAS, [Raspy-Cal](https://raspy-cal.dphilippus.com/).
+Since June 2019, I have worked on the [Los Angeles River Environmental Flows Project](https://www.sccwrp.org/about/research-areas/ecohydrology/los-angeles-river-flows-project/), primarily as a hydraulic modeler.  The project's original goal was to investigate the impacts of increased wastewater recycling on ecology and recreational uses in the Los Angeles River, which, in the dry season, is mostly wastewater.  We are now working on restoration scenarios to mitigate the impact of wastewater recycling and other flow changes.  For the project, I assembled a HEC-RAS model from existing partial models and LIDAR data, calibrated the model, and used the model as well as a suite of utility scripts I developed to efficiently analyze a large range of hydrologic and hydraulic scenarios.  As spinoff projects, I developed an automatic calibration utility for HEC-RAS, [Raspy-Cal](https://raspy-cal.dphilippus.com/), and a hydraulic scenario automation tool, [RaspyGeo](https://pypi.org/project/RaspyGeo/).
 
 ## Selected Publications & Conferences
 
@@ -37,6 +53,7 @@ My master's degree coursework focused on modeling, applied mathematics and field
   * Field Methods in Hydrology
   * Hydrometeorology
   * Unsaturated Soil Mechanics (with a focus on hydraulics)
+  * Economics of Water Resources
 * Undergraduate-level (civil engineering):
   * Advanced Surveying & Infrastructure Design
   * Onsite Wastewater Reuse
@@ -44,13 +61,11 @@ My master's degree coursework focused on modeling, applied mathematics and field
 
 # Skills
 
-I have professional experience with machine learning and data analysis, hydraulic modeling, software development (particularly for data processing automation), GIS and remote sensing, and surveying, and am particularly familiar with HEC-RAS, R, Python, ArcMap (including ArcPy), and Google Earth Engine.  I also have course-related lab experience with river gaging, distributed temperature sensing, infiltration tests, geophysical surveys, MODFLOW, Hydrus, AutoCAD Civil3D, and HEC-HMS, and with implementing numerical models.
+I have professional experience with machine learning and data analysis, hydraulic modeling, software development (particularly for data processing automation), GIS and remote sensing, surveying, and hydrologic fieldwork, and am particularly familiar with HEC-RAS, R, Python, ArcMap (including ArcPy), and Google Earth Engine.  I also have course-related lab experience with river gauging, distributed temperature sensing, infiltration tests, geophysical surveys, MODFLOW, Hydrus, AutoCAD Civil3D, and HEC-HMS, and with implementing numerical models.
 
 # Links
 
 * [LinkedIn](https://www.linkedin.com/in/daniel-philippus/)
-* [TempEst (stream temperature estimator)](https://github.com/river-tempest/tempest)
-* [Raspy-Cal (HEC-RAS calibrator)](https://raspy-cal.dphilippus.com)
 
 # Miscellaneous
 
