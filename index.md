@@ -2,9 +2,13 @@ I research the prediction of river temperature in streams without local observat
 
 # Research
 
-## Stream Temperature Models
+# Stream/River Temperature
 
-My main research is developing several stream temperature models.  The emphasis is on statistical modeling at the scale of the contiguous United States.
+My main area of research is stream temperature modeling. All of my related software is documented on the [TempEst website](https://www.rivertempest.org/). Broadly, I investigate large-scale patterns in stream temperature and how to efficiently predict them.
+
+## Models
+
+I focus on statistical modeling for ungaged/unmonitored streams at the contiguous United States (CONUS) scale. These all have more extensive descriptions on the [TempEst website](https://www.rivertempest.org/).
 
 - [TempEst 1](https://github.com/mines-ciroh/tempest1) estimates current/historic stream temperatures without local field data.  It uses a machine learning (random forest) model, trained on the USGS gage network, with publicly-available satellite remote sensing data to estimate monthly mean stream temperatures across the contiguous United States.  [Model description and citation](https://www.sciencedirect.com/science/article/pii/S003442572400289X) - [Code](https://github.com/mines-ciroh/TempEst1)
 - [TempEst 2](https://github.com/mines-ciroh/tempest2) is essentially a daily-resolution version of TempEst 1, built using an interpretable, geostatistical approach.  It estimates daily mean and maximum temperatures across the CONUS. TempEst 2 implements what could be called a "regime-oriented" approach, where it estimates the quantitative thermal regime of the stream (seasonal variation and weather sensitivity), then applies that to actual weather data.  This approach is called SCHEMA, or "Seasonal Conditions Historical Expectation with Modeled daily Anomaly".  The manuscript is in review; development and validation data, and a demo notebook, are available on [HydroShare](https://www.hydroshare.org/resource/a8b243957f7946e388d10ab206990675/) and the code is on [GitHub](https://github.com/mines-ciroh/TempEst2/).
@@ -16,6 +20,18 @@ Modeling stream temperature through application of a stream thermal regime requi
 # Software
 
 All of the software I have developed, below, is free and open-source under the terms of the GNU General Public License (GPL) v3.  Briefly, you are free to reuse, modify, and redistribute the software and source code, as long as any derivatives are also released under the GPL.
+
+## General Modeling Framework
+
+The SCHEMA framework I developed for TempEst 2 seems to have the potential for more general application, so I built a Python package, [LibSCHEMA](https://pypi.org/project/libschema/), enabling automatic implementation of SCHEMA models: you provide the seasonality and anomaly functions, LibSCHEMA does the rest.
+
+The idea is that, where it comes to software development, a researcher probably spends more time implementing (and debugging) general software logistics - data management, model execution, general program logic, etc - than implementing the core model functions. Since SCHEMA is a very general framework, we can provide all of that general logistics code ahead of time for a huge range of models, and programming time can be spent just on the model functionality. How general? Pretty much any lumped model can be wrangled into a SCHEMA framework. For example, a curve number-based hydrologic model could include baseflow as the seasonal component and the full hydrograph logic as the anomaly component.
+
+Having all that written out in a general way allows LibSCHEMA to provide some extra functionality, too. There are two major areas where it does so. First is the concept of "modification engines": model coefficients shouldn't necessarily be static over the entire model run, and LibSCHEMA is capable of automatically updating them as the model runs. These can implement arbitrary modifications to the seasonality and anomaly components based on any input data. One example would be data assimilation: the modification engine can request "yesterday's observation" as an additional input and use it to adjust coefficients over time.
+
+The other major capability provided for free is a Basic Model Interface implementation. That's a general framework for model interoperability, and particularly relevant for working with NOAA's NextGen National Water Model Framework, which is based on the BMI. LibSCHEMA provides a full-fledged BMI implementation for any LibSCHEMA model, and that's a lot of boilerplate and testing that you don't have to worry about.
+
+These highlight a more general point: any model implemented with LibSCHEMA benefits from general advances in model implementation with no extra work. For example, LibSCHEMA can intelligently decide whether to run the model as a single pass (for historical prediction), which is very fast because of vectorized calculations but doesn't allow modification engines, or step-by-step, which is slower but works with modification engines. That's already one thing the researcher doesn't have to worry about. But I have plans for smarter approaches, like running single-pass in between modification engine steps or working out how to apply a modification engine ahead of time and then run the whole thing in a single pass, and when those are implemented, all LibSCHEMA models get the upgrade with no extra programming.
 
 ## Stream Temperature Models
 
